@@ -12,7 +12,8 @@
 		960E55B52991154D00558F89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960E55B42991154D00558F89 /* Assets.xcassets */; };
 		960E55B82991154D00558F89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960E55B72991154D00558F89 /* Preview Assets.xcassets */; };
 		960E55BF299289DE00558F89 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960E55BE299289DE00558F89 /* Home.swift */; };
-		968B7CAA2993E0750047A38E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7CA92993E0750047A38E /* Category.swift */; };
+		968B7CAC29990C040047A38E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7CAB29990C040047A38E /* Category.swift */; };
+		968B7CD429991CA90047A38E /* T-Shirt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7CD329991CA90047A38E /* T-Shirt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,8 @@
 		960E55B42991154D00558F89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		960E55B72991154D00558F89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		960E55BE299289DE00558F89 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		968B7CA92993E0750047A38E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		968B7CAB29990C040047A38E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		968B7CD329991CA90047A38E /* T-Shirt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "T-Shirt.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 				960E55B02991154D00558F89 /* YourClosetApp.swift */,
 				960E55B22991154D00558F89 /* ContentView.swift */,
 				960E55BE299289DE00558F89 /* Home.swift */,
-				968B7CA92993E0750047A38E /* Category.swift */,
+				968B7CAB29990C040047A38E /* Category.swift */,
+				968B7CD329991CA90047A38E /* T-Shirt.swift */,
 				960E55B42991154D00558F89 /* Assets.xcassets */,
 				960E55B62991154D00558F89 /* Preview Content */,
 			);
@@ -145,8 +148,9 @@
 			files = (
 				960E55B32991154D00558F89 /* ContentView.swift in Sources */,
 				960E55BF299289DE00558F89 /* Home.swift in Sources */,
+				968B7CD429991CA90047A38E /* T-Shirt.swift in Sources */,
 				960E55B12991154D00558F89 /* YourClosetApp.swift in Sources */,
-				968B7CAA2993E0750047A38E /* Category.swift in Sources */,
+				968B7CAC29990C040047A38E /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

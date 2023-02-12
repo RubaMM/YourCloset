@@ -2,7 +2,7 @@
 //  Category.swift
 //  YourCloset
 //
-//  Created by Ruba Abuhatlah on 17/07/1444 AH.
+//  Created by Ruba Abuhatlah on 21/07/1444 AH.
 //
 
 import SwiftUI
@@ -12,6 +12,9 @@ struct Category: View {
     
     @State var Category1 :[String] = ["T-Shirts","Tops","Sweats", "Jackets","Dresses", "Skirts","Jeans","Pants","Shorts","Activewear",
     "Swimwear","Sleepwear","Underwear","Loungwear","Bags","Shoes"]
+    
+    @State var Category2 = ["T-ShirtsP","TopsP","SweatsP", "JacketsP","DressesP", "SkirtsP","JeansP","PantsP","ShortsP","ActivewearP",
+    "SwimwearP","SleepwearP","UnderwearP","LoungwearP","BagsP","ShoesP"]
    // @State var Categoru2 = ["Bags ", "Dresses","Skirts","Sleepwear"]
     let columns = [
            GridItem(.adaptive(minimum: 180))
@@ -39,7 +42,7 @@ struct Category: View {
                             
                             
                         ForEach(Category1, id:\.self){ Category in
-                        
+                      
                ZStack{
                             Rectangle()
                             .frame(width: 170,height:190)
@@ -50,9 +53,9 @@ struct Category: View {
                         Text("\(Category)")
                         .font(.title2)
                         .fontWeight(.semibold)
-                                                
-                                            }
+                
                                         }
+                        }
                         } .padding(.horizontal)
                         
                        

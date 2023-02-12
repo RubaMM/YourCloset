@@ -20,9 +20,9 @@ struct Home: View {
                 Text("URCLOSET")
                     .font(.largeTitle)
                     .foregroundColor(.black)
-                    .padding(.bottom,80)
+                   
                 
-
+                    Divider()
                     
                  
                     ZStack{
@@ -33,6 +33,7 @@ struct Home: View {
                         .cornerRadius(10)
                         .shadow(radius: 5)
                         .padding(.bottom,30)
+                        .padding()
                     // .position(x: 196 , y:0)HStack(spacing:150){
                             
                         HStack(spacing:130){
