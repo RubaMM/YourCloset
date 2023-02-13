@@ -33,10 +33,10 @@ struct T_Shirt: View {
                         // .position(x: 196 , y:0)HStack(spacing:150){
                         
                             
-                            Text("Tips")
-                                .font(.title2)
-                                .fontWeight(.semibold)
-                                .foregroundColor(.black)
+                        Image("Camera")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 70, height:70 )
     
                     
                 
