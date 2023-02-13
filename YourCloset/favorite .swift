@@ -9,7 +9,20 @@ import SwiftUI
 
 struct favorite_: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color.init("MainColor").ignoresSafeArea()
+            ZStack{
+                Text("Favorites").font(.custom("Bodoni 72", size: 36))
+                    
+                    
+                    .padding(.top, -420.0)
+                
+                Divider()
+                    .padding(.top, -375.0)
+                
+                
+            }
+        }
     }
 }
 
