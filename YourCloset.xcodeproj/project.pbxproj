@@ -73,12 +73,12 @@
 			children = (
 				960E55B02991154D00558F89 /* YourClosetApp.swift */,
 				960E55B22991154D00558F89 /* ContentView.swift */,
+				968B7CD329991CA90047A38E /* T-Shirt.swift */,
 				968B7CED2999269E0047A38E /* Models */,
 				960E55BE299289DE00558F89 /* Home.swift */,
 				968B7CF0299926C60047A38E /* Extensions */,
 				968B7CAB29990C040047A38E /* Category.swift */,
 				968B7CF4299926F90047A38E /* ViewModels */,
-				968B7CD329991CA90047A38E /* T-Shirt.swift */,
 				B1480797299921C8006D6895 /* favorite .swift */,
 				B148079C29992BC0006D6895 /* Bodoni 72.ttc */,
 				960E55B42991154D00558F89 /* Assets.xcassets */,

@@ -23,7 +23,7 @@ struct Category: View {
             VStack(spacing:50){
                 
                 Text("Category")
-                    .font(.largeTitle)
+                    .font(.custom("Bodoni 72", size: 36))
                     .foregroundColor(.black)
                    // .padding(.bottom,80)
                 
@@ -53,8 +53,8 @@ struct Category: View {
                    
                    
                    Text("\(Category.Name)")
-                       .font(.title2)
-                       .fontWeight(.semibold)
+                       .font(.custom("Bodoni 72", size: 28))
+                      // .fontWeight(.semibold)
                        .foregroundColor(.black)
                        .padding(.top,100)
                 

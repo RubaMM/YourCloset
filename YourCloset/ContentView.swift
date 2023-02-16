@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @EnvironmentObject var vm: ViewModel
+    
     var body: some View {
         NavigationView {
+            
+            
             VStack {
                 if let image = vm.image {
                     ZoomableScrollView {
@@ -32,7 +36,11 @@ struct ContentView: View {
                         vm.source = .camera
                         vm.showPhotoPicker()
                     } label: {
-                        Text("Camera")
+//                        Text("Camera")
+                        Image("Camera")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 70, height:70 )
                     }
                     Button {
                         vm.source = .library
