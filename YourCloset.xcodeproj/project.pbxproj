@@ -16,10 +16,12 @@
 		968B7CD429991CA90047A38E /* T-Shirt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7CD329991CA90047A38E /* T-Shirt.swift */; };
 		968B7CE52999265D0047A38E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7CE32999265D0047A38E /* ImagePicker.swift */; };
 		968B7CE62999265D0047A38E /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7CE42999265D0047A38E /* ZoomableScrollView.swift */; };
-		968B7CEF2999269E0047A38E /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7CEE2999269E0047A38E /* Picker.swift */; };
 		968B7CF2299926C60047A38E /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7CF1299926C60047A38E /* FileManager+Extension.swift */; };
 		968B7CF6299926F90047A38E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7CF5299926F90047A38E /* ViewModel.swift */; };
-		B1480798299921C8006D6895 /* favorite .swift in Sources */ = {isa = PBXBuildFile; fileRef = B1480797299921C8006D6895 /* favorite .swift */; };
+		96BABFF429A0E22F0064A072 /* descriptionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BABFF329A0E22E0064A072 /* descriptionPage.swift */; };
+		96BABFF629A0E2610064A072 /* favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BABFF529A0E2610064A072 /* favorite.swift */; };
+		96BABFF829A0E2CF0064A072 /* addCommenet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BABFF729A0E2CF0064A072 /* addCommenet.swift */; };
+		96BABFFA29A111020064A072 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BABFF929A111020064A072 /* Picker.swift */; };
 		B148079D29992BC0006D6895 /* Bodoni 72.ttc in Resources */ = {isa = PBXBuildFile; fileRef = B148079C29992BC0006D6895 /* Bodoni 72.ttc */; };
 /* End PBXBuildFile section */
 
@@ -34,10 +36,12 @@
 		968B7CD329991CA90047A38E /* T-Shirt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "T-Shirt.swift"; sourceTree = "<group>"; };
 		968B7CE32999265D0047A38E /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		968B7CE42999265D0047A38E /* ZoomableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
-		968B7CEE2999269E0047A38E /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
 		968B7CF1299926C60047A38E /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		968B7CF5299926F90047A38E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		B1480797299921C8006D6895 /* favorite .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "favorite .swift"; sourceTree = "<group>"; };
+		96BABFF329A0E22E0064A072 /* descriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = descriptionPage.swift; sourceTree = "<group>"; };
+		96BABFF529A0E2610064A072 /* favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favorite.swift; sourceTree = "<group>"; };
+		96BABFF729A0E2CF0064A072 /* addCommenet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCommenet.swift; sourceTree = "<group>"; };
+		96BABFF929A111020064A072 /* Picker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Picker.swift; path = ../../../../../.Trash/Picker.swift; sourceTree = "<group>"; };
 		B148079C29992BC0006D6895 /* Bodoni 72.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bodoni 72.ttc"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +75,7 @@
 		960E55AF2991154D00558F89 /* YourCloset */ = {
 			isa = PBXGroup;
 			children = (
+				96BABFFB29A129E60064A072 /* CoreData */,
 				960E55B02991154D00558F89 /* YourClosetApp.swift */,
 				960E55B22991154D00558F89 /* ContentView.swift */,
 				968B7CD329991CA90047A38E /* T-Shirt.swift */,
@@ -79,11 +84,13 @@
 				968B7CF0299926C60047A38E /* Extensions */,
 				968B7CAB29990C040047A38E /* Category.swift */,
 				968B7CF4299926F90047A38E /* ViewModels */,
-				B1480797299921C8006D6895 /* favorite .swift */,
 				B148079C29992BC0006D6895 /* Bodoni 72.ttc */,
 				960E55B42991154D00558F89 /* Assets.xcassets */,
 				968B7CE22999265D0047A38E /* UIViewRepresentables */,
 				960E55B62991154D00558F89 /* Preview Content */,
+				96BABFF329A0E22E0064A072 /* descriptionPage.swift */,
+				96BABFF529A0E2610064A072 /* favorite.swift */,
+				96BABFF729A0E2CF0064A072 /* addCommenet.swift */,
 			);
 			path = YourCloset;
 			sourceTree = "<group>";
@@ -109,7 +116,7 @@
 		968B7CED2999269E0047A38E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				968B7CEE2999269E0047A38E /* Picker.swift */,
+				96BABFF929A111020064A072 /* Picker.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,6 +136,13 @@
 			);
 			name = ViewModels;
 			path = "../../../../Downloads/My Images 1  - Completed/My Images/ViewModels";
+			sourceTree = "<group>";
+		};
+		96BABFFB29A129E60064A072 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,17 +216,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BABFF829A0E2CF0064A072 /* addCommenet.swift in Sources */,
 				968B7CF2299926C60047A38E /* FileManager+Extension.swift in Sources */,
+				96BABFF629A0E2610064A072 /* favorite.swift in Sources */,
 				960E55B32991154D00558F89 /* ContentView.swift in Sources */,
 				960E55BF299289DE00558F89 /* Home.swift in Sources */,
+				96BABFF429A0E22F0064A072 /* descriptionPage.swift in Sources */,
 				968B7CF6299926F90047A38E /* ViewModel.swift in Sources */,
 				968B7CD429991CA90047A38E /* T-Shirt.swift in Sources */,
 				968B7CE52999265D0047A38E /* ImagePicker.swift in Sources */,
+				96BABFFA29A111020064A072 /* Picker.swift in Sources */,
 				960E55B12991154D00558F89 /* YourClosetApp.swift in Sources */,
-				B1480798299921C8006D6895 /* favorite .swift in Sources */,
 				968B7CE62999265D0047A38E /* ZoomableScrollView.swift in Sources */,
 				968B7CAC29990C040047A38E /* Category.swift in Sources */,
-				968B7CEF2999269E0047A38E /* Picker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

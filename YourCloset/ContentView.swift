@@ -5,16 +5,19 @@
 //  Created by Ruba Abuhatlah on 15/07/1444 AH.
 //
 
+//
+//  ContentView.swift
+//  My Images
+//
+//  Created by Stewart Lynch on 2021-08-08.
+//
+
 import SwiftUI
 
 struct ContentView: View {
-    
     @EnvironmentObject var vm: ViewModel
-    
     var body: some View {
         NavigationView {
-            
-            
             VStack {
                 if let image = vm.image {
                     ZoomableScrollView {
@@ -31,16 +34,12 @@ struct ContentView: View {
                         .frame(minWidth: 0, maxWidth: .infinity)
                         .padding(.horizontal)
                 }
-              HStack {
+                HStack {
                     Button {
                         vm.source = .camera
                         vm.showPhotoPicker()
                     } label: {
-//                        Text("Camera")
-                        Image("Camera")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 70, height:70 )
+                        Text("Camera")
                     }
                     Button {
                         vm.source = .library
@@ -55,6 +54,11 @@ struct ContentView: View {
                 ImagePicker(sourceType: vm.source == .library ? .photoLibrary : .camera, selectedImage: $vm.image)
                     .ignoresSafeArea()
             }
+            .alert("Error", isPresented: $vm.showCameraAlert, presenting: vm.cameraError, actions: { cameraError in
+                cameraError.button
+            }, message: { cameraError in
+                Text(cameraError.message)
+            })
             .navigationTitle("My Images")
         }
     }
