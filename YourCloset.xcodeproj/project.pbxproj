@@ -22,6 +22,22 @@
 		96BABFF629A0E2610064A072 /* favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BABFF529A0E2610064A072 /* favorite.swift */; };
 		96BABFF829A0E2CF0064A072 /* addCommenet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BABFF729A0E2CF0064A072 /* addCommenet.swift */; };
 		96BABFFA29A111020064A072 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BABFF929A111020064A072 /* Picker.swift */; };
+		96BABFFE29A256A70064A072 /* ClosetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96BABFFC29A256A70064A072 /* ClosetModel.xcdatamodeld */; };
+		96BAC00029A295AA0064A072 /* Tops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BABFFF29A295AA0064A072 /* Tops.swift */; };
+		96BAC00229A296180064A072 /* Sweats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC00129A296180064A072 /* Sweats.swift */; };
+		96BAC00429A2965F0064A072 /* Jackets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC00329A2965F0064A072 /* Jackets.swift */; };
+		96BAC00629A296A90064A072 /* Dresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC00529A296A90064A072 /* Dresses.swift */; };
+		96BAC00829A296E20064A072 /* Skirts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC00729A296E20064A072 /* Skirts.swift */; };
+		96BAC00A29A2974F0064A072 /* Jeans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC00929A2974F0064A072 /* Jeans.swift */; };
+		96BAC00C29A297800064A072 /* Pants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC00B29A297800064A072 /* Pants.swift */; };
+		96BAC00E29A297B40064A072 /* Shorts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC00D29A297B40064A072 /* Shorts.swift */; };
+		96BAC01029A297F30064A072 /* Activewear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC00F29A297F30064A072 /* Activewear.swift */; };
+		96BAC01229A2982E0064A072 /* Swimwear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC01129A2982E0064A072 /* Swimwear.swift */; };
+		96BAC01429A2985C0064A072 /* Sleepwear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC01329A2985C0064A072 /* Sleepwear.swift */; };
+		96BAC01629A298980064A072 /* Underwear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC01529A298980064A072 /* Underwear.swift */; };
+		96BAC01829A298E10064A072 /* Loungwear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC01729A298E10064A072 /* Loungwear.swift */; };
+		96BAC01A29A299B20064A072 /* Bags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC01929A299B20064A072 /* Bags.swift */; };
+		96BAC01C29A299DE0064A072 /* Shoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAC01B29A299DE0064A072 /* Shoes.swift */; };
 		B148079D29992BC0006D6895 /* Bodoni 72.ttc in Resources */ = {isa = PBXBuildFile; fileRef = B148079C29992BC0006D6895 /* Bodoni 72.ttc */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +58,22 @@
 		96BABFF529A0E2610064A072 /* favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favorite.swift; sourceTree = "<group>"; };
 		96BABFF729A0E2CF0064A072 /* addCommenet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCommenet.swift; sourceTree = "<group>"; };
 		96BABFF929A111020064A072 /* Picker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Picker.swift; path = ../../../../../.Trash/Picker.swift; sourceTree = "<group>"; };
+		96BABFFD29A256A70064A072 /* ClosetModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClosetModel.xcdatamodel; sourceTree = "<group>"; };
+		96BABFFF29A295AA0064A072 /* Tops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tops.swift; sourceTree = "<group>"; };
+		96BAC00129A296180064A072 /* Sweats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweats.swift; sourceTree = "<group>"; };
+		96BAC00329A2965F0064A072 /* Jackets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jackets.swift; sourceTree = "<group>"; };
+		96BAC00529A296A90064A072 /* Dresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dresses.swift; sourceTree = "<group>"; };
+		96BAC00729A296E20064A072 /* Skirts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skirts.swift; sourceTree = "<group>"; };
+		96BAC00929A2974F0064A072 /* Jeans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jeans.swift; sourceTree = "<group>"; };
+		96BAC00B29A297800064A072 /* Pants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pants.swift; sourceTree = "<group>"; };
+		96BAC00D29A297B40064A072 /* Shorts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shorts.swift; sourceTree = "<group>"; };
+		96BAC00F29A297F30064A072 /* Activewear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activewear.swift; sourceTree = "<group>"; };
+		96BAC01129A2982E0064A072 /* Swimwear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swimwear.swift; sourceTree = "<group>"; };
+		96BAC01329A2985C0064A072 /* Sleepwear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleepwear.swift; sourceTree = "<group>"; };
+		96BAC01529A298980064A072 /* Underwear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Underwear.swift; sourceTree = "<group>"; };
+		96BAC01729A298E10064A072 /* Loungwear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loungwear.swift; sourceTree = "<group>"; };
+		96BAC01929A299B20064A072 /* Bags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bags.swift; sourceTree = "<group>"; };
+		96BAC01B29A299DE0064A072 /* Shoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes.swift; sourceTree = "<group>"; };
 		B148079C29992BC0006D6895 /* Bodoni 72.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bodoni 72.ttc"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,10 +107,24 @@
 		960E55AF2991154D00558F89 /* YourCloset */ = {
 			isa = PBXGroup;
 			children = (
-				96BABFFB29A129E60064A072 /* CoreData */,
 				960E55B02991154D00558F89 /* YourClosetApp.swift */,
 				960E55B22991154D00558F89 /* ContentView.swift */,
 				968B7CD329991CA90047A38E /* T-Shirt.swift */,
+				96BABFFF29A295AA0064A072 /* Tops.swift */,
+				96BAC00129A296180064A072 /* Sweats.swift */,
+				96BAC00329A2965F0064A072 /* Jackets.swift */,
+				96BAC00529A296A90064A072 /* Dresses.swift */,
+				96BAC00729A296E20064A072 /* Skirts.swift */,
+				96BAC00929A2974F0064A072 /* Jeans.swift */,
+				96BAC00B29A297800064A072 /* Pants.swift */,
+				96BAC00D29A297B40064A072 /* Shorts.swift */,
+				96BAC00F29A297F30064A072 /* Activewear.swift */,
+				96BAC01129A2982E0064A072 /* Swimwear.swift */,
+				96BAC01329A2985C0064A072 /* Sleepwear.swift */,
+				96BAC01529A298980064A072 /* Underwear.swift */,
+				96BAC01729A298E10064A072 /* Loungwear.swift */,
+				96BAC01929A299B20064A072 /* Bags.swift */,
+				96BAC01B29A299DE0064A072 /* Shoes.swift */,
 				968B7CED2999269E0047A38E /* Models */,
 				960E55BE299289DE00558F89 /* Home.swift */,
 				968B7CF0299926C60047A38E /* Extensions */,
@@ -91,6 +137,7 @@
 				96BABFF329A0E22E0064A072 /* descriptionPage.swift */,
 				96BABFF529A0E2610064A072 /* favorite.swift */,
 				96BABFF729A0E2CF0064A072 /* addCommenet.swift */,
+				96BABFFC29A256A70064A072 /* ClosetModel.xcdatamodeld */,
 			);
 			path = YourCloset;
 			sourceTree = "<group>";
@@ -136,13 +183,6 @@
 			);
 			name = ViewModels;
 			path = "../../../../Downloads/My Images 1  - Completed/My Images/ViewModels";
-			sourceTree = "<group>";
-		};
-		96BABFFB29A129E60064A072 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,19 +256,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BAC00E29A297B40064A072 /* Shorts.swift in Sources */,
+				96BAC00C29A297800064A072 /* Pants.swift in Sources */,
 				96BABFF829A0E2CF0064A072 /* addCommenet.swift in Sources */,
 				968B7CF2299926C60047A38E /* FileManager+Extension.swift in Sources */,
 				96BABFF629A0E2610064A072 /* favorite.swift in Sources */,
+				96BAC00829A296E20064A072 /* Skirts.swift in Sources */,
+				96BAC00029A295AA0064A072 /* Tops.swift in Sources */,
 				960E55B32991154D00558F89 /* ContentView.swift in Sources */,
+				96BAC01C29A299DE0064A072 /* Shoes.swift in Sources */,
+				96BAC01229A2982E0064A072 /* Swimwear.swift in Sources */,
+				96BAC00629A296A90064A072 /* Dresses.swift in Sources */,
 				960E55BF299289DE00558F89 /* Home.swift in Sources */,
 				96BABFF429A0E22F0064A072 /* descriptionPage.swift in Sources */,
 				968B7CF6299926F90047A38E /* ViewModel.swift in Sources */,
+				96BAC01829A298E10064A072 /* Loungwear.swift in Sources */,
 				968B7CD429991CA90047A38E /* T-Shirt.swift in Sources */,
+				96BAC01029A297F30064A072 /* Activewear.swift in Sources */,
+				96BAC00A29A2974F0064A072 /* Jeans.swift in Sources */,
 				968B7CE52999265D0047A38E /* ImagePicker.swift in Sources */,
+				96BAC01429A2985C0064A072 /* Sleepwear.swift in Sources */,
 				96BABFFA29A111020064A072 /* Picker.swift in Sources */,
+				96BAC01629A298980064A072 /* Underwear.swift in Sources */,
 				960E55B12991154D00558F89 /* YourClosetApp.swift in Sources */,
+				96BABFFE29A256A70064A072 /* ClosetModel.xcdatamodeld in Sources */,
 				968B7CE62999265D0047A38E /* ZoomableScrollView.swift in Sources */,
+				96BAC00229A296180064A072 /* Sweats.swift in Sources */,
 				968B7CAC29990C040047A38E /* Category.swift in Sources */,
+				96BAC01A29A299B20064A072 /* Bags.swift in Sources */,
+				96BAC00429A2965F0064A072 /* Jackets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +489,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		96BABFFC29A256A70064A072 /* ClosetModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				96BABFFD29A256A70064A072 /* ClosetModel.xcdatamodel */,
+			);
+			currentVersion = 96BABFFD29A256A70064A072 /* ClosetModel.xcdatamodel */;
+			path = ClosetModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 960E55A52991154C00558F89 /* Project object */;
 }
