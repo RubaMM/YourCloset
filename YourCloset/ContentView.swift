@@ -15,58 +15,47 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var vm: ViewModel
+    @State var isActive : Bool = false
+    @State private var size = 0.8
+    @State private var opacity = 0.5
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                if let image = vm.image {
-                    ZoomableScrollView {
-                        Image(uiImage: image)
-                            .resizable()
-                            .scaledToFit()
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                    }
-                } else {
-                    Image(systemName: "photo.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .opacity(0.6)
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .padding(.horizontal)
-                }
-                HStack {
-                    Button {
-                        vm.source = .camera
-                        vm.showPhotoPicker()
-                    } label: {
-                        Text("Camera")
-                    }
-                    Button {
-                        vm.source = .library
-                        vm.showPhotoPicker()
-                    } label: {
-                        Text("Photos")
+        
+        if isActive {
+      Home()
+            
+        }
+        else {
+            ZStack {
+
+                Color("MainColor").ignoresSafeArea()
+                Image("Logo")
+                .resizable()
+                .frame(width: 250, height: 200)
+                .scaleEffect(size)
+                .opacity(opacity)
+                .onAppear {
+                    withAnimation(.easeIn(duration: 2.2)) {
+                        self.size = 0.9
+                        self.opacity = 1.00
                     }
                 }
-                Spacer()
             }
-            .sheet(isPresented: $vm.showPicker) {
-                ImagePicker(sourceType: vm.source == .library ? .photoLibrary : .camera, selectedImage: $vm.image)
-                    .ignoresSafeArea()
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                    withAnimation {
+
+                        self.isActive = true
+                    }
+                }
             }
-            .alert("Error", isPresented: $vm.showCameraAlert, presenting: vm.cameraError, actions: { cameraError in
-                cameraError.button
-            }, message: { cameraError in
-                Text(cameraError.message)
-            })
-            .navigationTitle("My Images")
+            
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SplashScreenView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(ViewModel())
     }
 }

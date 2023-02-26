@@ -9,58 +9,64 @@ import SwiftUI
 
 struct descriptionPage: View {
     @State private var discription: String = ""
+    @EnvironmentObject var vm: ViewModel
+    
     var body: some View {
-        ZStack{
-            Color.init("MainColor").ignoresSafeArea()
-            
-            Rectangle()
-                .foregroundColor(.white)
-                .cornerRadius(10)
-                .frame(width: 330,height:128)
-                .padding([.top, .leading, .trailing],80)
-                .overlay(TextField("Add Discription", text: $discription)
-                    .font(.custom("Bodoni 72", size: 20))
-                    .offset(x:180,y:40)
-                )
-            
-            
-            Button("Delete") { }
-                
-                
-                .frame(width:324,height: 56 )
-                .background(Color.init("button1"))
-                    .font(.custom("Bodoni 72", size: 20))
-                    .cornerRadius(10)
-                    .foregroundColor(.red)
-                    .padding(.top,400)
-            
-            Button("Save") { }
-                
-
-                .frame(width:324,height: 56 )
-                .background(Color.white)
-                    .font(.custom("Bodoni 72", size: 20))
-                    .cornerRadius(10)
-                    .foregroundColor(.black)
-                    .padding(.top,550)
-                 
-            
-            
+        NavigationView {
             ZStack{
-                Rectangle()
-                    .foregroundColor(.white)
-                    .cornerRadius(36)
-                    .frame(width: 427,height:345)
-               
-                    .padding([.leading, .bottom, .trailing], 600.0)
+                Color.init("MainColor").ignoresSafeArea()
+                
+                VStack {
+                    if let image = vm.image {
+              
+                            Image(uiImage: image)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(minWidth: 0, maxWidth: .infinity)
+                        
+                    } else {
+                        Image(systemName: "photo.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .opacity(0.6)
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .padding(.horizontal)
+                    }
+                    VStack {
+                        TextField("Image Name", text: $vm.imageName) { isEditing in
+                            vm.isEditing = isEditing
+                        }
+                        .textFieldStyle(.roundedBorder)
+                        HStack {
+                            Button {
+                                if vm.selectedImage == nil {
+                                    vm.addMyImage(vm.imageName, image: vm.image!)
+                                }
+                            } label: {
+                                ButtonLabel(symbolName: vm.selectedImage == nil ? "square.and.arrow.down.fill" : "square.and.arrow.up.fill",
+                                            label: vm.selectedImage == nil ? "Save" : "Update")
+                            }
+                            .disabled(vm.buttonDisabled)
+                            .opacity(vm.buttonDisabled ? 0.6 : 1)
+                            if !vm.deleteButtonIsHidden {
+                                Button {
+                                    
+                                } label: {
+                                    ButtonLabel(symbolName: "trash", label: "Delete")
+                                }
+                            }
+                        }
+                    }
+                    
+                }
             }
         }
-       
     }
 }
 
 struct descriptionPage_Previews: PreviewProvider {
     static var previews: some View {
         descriptionPage()
+            .environmentObject(ViewModel())
     }
 }

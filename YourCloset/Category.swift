@@ -12,68 +12,72 @@ struct Category: View {
     @State var CopyOinfo : [Oinfo] = [Oinfo.ex1,Oinfo.ex2,Oinfo.ex3,Oinfo.ex4,Oinfo.ex5,Oinfo.ex6,Oinfo.ex7,Oinfo.ex8,Oinfo.ex9,Oinfo.ex10,Oinfo.ex11,Oinfo.ex12,Oinfo.ex13,Oinfo.ex14,Oinfo.ex15,Oinfo.ex16]
 
     let columns = [
-           GridItem(.adaptive(minimum: 180))
+           GridItem(.adaptive(minimum: 150))
        ]
     var body: some View {
-        
-        ZStack{
-            
-            Color("MainColor").ignoresSafeArea()
-            
-            VStack(spacing:50){
+      
+            ZStack{
                 
-                Text("Category")
-                    .font(.custom("Bodoni 72", size: 36))
-                    .foregroundColor(.black)
-                   // .padding(.bottom,80)
+                Color("MainColor").ignoresSafeArea()
                 
-                Divider()
-               
-                ScrollView{
+                VStack(spacing:50){
                     
-                    VStack(){
-                        //lazyvgrid
-                        LazyVGrid(columns: columns, spacing: 25) {
-                            
-                            
-                        ForEach(CopyOinfo){ Category in
-                      
-               ZStack{
-                            Rectangle()
-                            .frame(width: 170,height:190)
-                            .cornerRadius(15)
-                            .foregroundColor(.white)
-                            .padding(.trailing,5)
-                   
-                   Image("\(Category.img)")
-                       .resizable()
-                       .scaledToFill()
-                       .frame(width: 100, height:100 )
-                       .padding(.bottom,40)
-                   
-                   
-                   Text("\(Category.Name)")
-                       .font(.custom("Bodoni 72", size: 28))
-                      // .fontWeight(.semibold)
-                       .foregroundColor(.black)
-                       .padding(.top,100)
-                
-                                        }
-                        }
+                    Text("Category")
+                        .font(.custom("Bodoni 72", size: 36))
+                        .foregroundColor(.black)
+                    // .padding(.bottom,80)
+                    
+                    Divider()
+                    
+                    ScrollView{
+                        
+                        VStack(){
+                            //lazyvgrid
+                            LazyVGrid(columns: columns, spacing: 30) {
+                                
+                                
+                                ForEach(CopyOinfo){ Category in
+                                    
+                                    
+                                    ZStack{
+                                        Rectangle()
+                                            .frame(width: 160,height:180)
+                                            .cornerRadius(15)
+                                            .foregroundColor(.white)
+                                            .padding(.trailing,5)
+                                        
+                                        Image("\(Category.img)")
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(width: 100, height:100 )
+                                            .padding(.bottom,40)
+                                        
+                                        
+                                        Text("\(Category.Name)")
+                                            .font(.custom("Bodoni 72", size: 28))
+                                        // .fontWeight(.semibold)
+                                            .foregroundColor(.black)
+                                            .padding(.top,100)
+                                        
+                                    }
+                                }
+                            }
                         } .padding(.horizontal)
                         
-                       
+                        
                         
                     }
                     
                 }
                 
-            }
+            
+        }
+        }
         }
         
-    }
+    
        
-}
+
 
 struct Category_Previews: PreviewProvider {
     static var previews: some View {

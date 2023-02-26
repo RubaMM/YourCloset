@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct YourClosetApp: App {
+    
     @StateObject var vm = ViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
 
                 .environmentObject(vm)
+           
                 .onAppear {
                     UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
                 }

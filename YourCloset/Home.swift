@@ -10,77 +10,82 @@ import SwiftUI
 struct Home: View {
     var body: some View {
 
-        
-        ZStack{
-            
-            Color("MainColor").ignoresSafeArea()
-            
-            VStack(spacing:50){
+        NavigationView(){
+            ZStack{
                 
-                Text("URCLOSET")
-                    .font(.largeTitle)
-                    .foregroundColor(.black)
-                   
+                Color("MainColor").ignoresSafeArea()
                 
+                VStack(spacing:25){
+                    
+                    Text("URCLOSET")
+                        .font(.custom("Bodoni 72", size: 36))
+                        .foregroundColor(.black)
+                    
+                    
                     Divider()
                     
-                 
+                    
                     ZStack{
                         
                         Rectangle()
-                        .fill(.white)
-                        .frame(width: 350, height: 160)
-                        .cornerRadius(10)
-                        .shadow(radius: 5)
-                        .padding(.bottom,30)
-                        .padding()
-                    // .position(x: 196 , y:0)HStack(spacing:150){
-                            
+                            .fill(.white)
+                            .frame(width: 350, height: 160)
+                            .cornerRadius(10)
+                            .shadow(radius: 5)
+                            .padding(.bottom,30)
+                            .padding()
+                        // .position(x: 196 , y:0)HStack(spacing:150){
+                        
                         HStack(spacing:130){
-                                
-                            Text("Tips")
-                                .font(.title2)
+                            
+                            Text("Procedure")
+                                .font(.custom("Bodoni 72", size: 25))
                                 .fontWeight(.semibold)
                             //  .padding()
                             //   .padding(.top,-15)
                                 .foregroundColor(.black)
                             
-                            Image("Tip")
+                            Image("procedure")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 60, height:60 )
+                                .frame(width: 20, height:60 )
+                                .padding(.trailing)
                         }.padding(.bottom,50)
-                            
-                        }
-                        
-                ZStack{
-                    Rectangle()
-                        .fill(.white)
-                        .frame(width: 350, height: 160)
-                        .cornerRadius(10)
-                        .shadow(radius: 5)
-                        .padding(.bottom,220)
-                    
-                    HStack(spacing:130){
-                        
-                        
-                        Text("Closet")
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                        //  .padding()
-                        //   .padding(.top,-15)
-                            .foregroundColor(.black)
-                        
-                        Image("closet")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 60, height:60 )
-                    }.padding(.bottom,200)
                         
                     }
                     
+                    
+                    NavigationLink(destination: Category1()) {
+                        
+                        ZStack{
+                            Rectangle()
+                                .fill(.white)
+                                .frame(width: 350, height: 160)
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                                .padding(.bottom,220)
+                            
+                            HStack(spacing:130){
+                                
+                                
+                                Text("Closet")
+                                    .font(.custom("Bodoni 72", size: 25))
+                                    .fontWeight(.semibold)
+                                //  .padding()
+                                //   .padding(.top,-15)
+                                    .foregroundColor(.black)
+                                
+                                Image("closet")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 60, height:60 )
+                            }.padding(.bottom,200)
+                            
+                        }
+                    }
                 }
-                }
+            }
+        }
             }
         }
        
