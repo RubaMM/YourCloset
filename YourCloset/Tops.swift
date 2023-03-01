@@ -35,7 +35,7 @@ struct Tops: View {
                     Spacer()
                 }
                 .task {
-                    if FileManager().docExist(named: fileName) {
+                    if FileManager().docExist1(named: fileName) {
                         vm.loadMyImagesJSONFile()
                     }
                 }
@@ -68,7 +68,7 @@ struct Tops: View {
 struct Tops_Previews: PreviewProvider {
     static var previews: some View {
         Tops()
-            .environmentObject(ViewModel())
+            .environmentObject(ViewModel1())
     }
 }
 struct MyShe : View {
