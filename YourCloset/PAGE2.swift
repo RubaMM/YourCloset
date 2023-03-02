@@ -205,11 +205,10 @@ struct PAGE2: View {
                             VStack{
                                 Text("Classification of clothes: ")
                                     .font(.custom("SF Compact", size: 21))
-                                    .padding(.bottom)
                                     .foregroundColor(Color("c"))
-                                    .padding(.top,-20)
-                                    .padding(.leading,-20)
-                                
+                                    .padding(.top,-45)
+                                    .padding(.bottom,10)
+                                    .padding(.leading,-1)
                                 Text(" • Occasion clothes are clothes that you don't wear constantly,such as holiday clothes. ")
                                     .font(.custom("SF Compact", size: 14))
                                     .foregroundColor(Color.black)

@@ -9,8 +9,9 @@ import SwiftUI
 
 struct PAGE3: View {
     @State var showingBottomSheet = false
-    @Environment(\.dismiss) private var dismiss
     
+    @State var goBackToMain = false
+
     var body: some View {
             
 
@@ -33,8 +34,8 @@ struct PAGE3: View {
                 
                 
                     Button {
-                        dismiss()
-                     
+       
+                        goBackToMain.toggle()
                     } label: {
                         
                         
@@ -57,6 +58,9 @@ struct PAGE3: View {
                         
                     }
                     .contentShape(Rectangle())
+                    .fullScreenCover(isPresented: $goBackToMain) {
+                        Home()
+                    }
                 
                     
             }
