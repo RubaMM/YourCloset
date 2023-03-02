@@ -12,7 +12,9 @@ extension Skirts {
     var imageScroll: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 10) {
-                ForEach(vm.myImages) { myImage in
+                ForEach(vm.myImages.filter({ closet in
+                    closet.category == "Skirts"
+                })) { myImage in
                     VStack {
                         Image(uiImage: myImage.image)
                             .resizable()

@@ -12,6 +12,11 @@
 		960E55B52991154D00558F89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960E55B42991154D00558F89 /* Assets.xcassets */; };
 		960E55B82991154D00558F89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960E55B72991154D00558F89 /* Preview Assets.xcassets */; };
 		960E55BF299289DE00558F89 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960E55BE299289DE00558F89 /* Home.swift */; };
+		9627006C29B0837100E582D6 /* GifImag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627006B29B0837100E582D6 /* GifImag.swift */; };
+		9627006E29B0839800E582D6 /* PAGE1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627006D29B0839800E582D6 /* PAGE1.swift */; };
+		9627007029B083BE00E582D6 /* PAGE2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627006F29B083BD00E582D6 /* PAGE2.swift */; };
+		9627007229B083FB00E582D6 /* PAGE3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627007129B083FB00E582D6 /* PAGE3.swift */; };
+		9627007429B0887800E582D6 /* 22.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9627007329B0887800E582D6 /* 22.gif */; };
 		968B7CAC29990C040047A38E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7CAB29990C040047A38E /* Category.swift */; };
 		968B7CD429991CA90047A38E /* T-Shirt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B7CD329991CA90047A38E /* T-Shirt.swift */; };
 		96BABFF429A0E22F0064A072 /* descriptionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BABFF329A0E22E0064A072 /* descriptionPage.swift */; };
@@ -69,6 +74,11 @@
 		960E55B42991154D00558F89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		960E55B72991154D00558F89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		960E55BE299289DE00558F89 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9627006B29B0837100E582D6 /* GifImag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImag.swift; sourceTree = "<group>"; };
+		9627006D29B0839800E582D6 /* PAGE1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGE1.swift; sourceTree = "<group>"; };
+		9627006F29B083BD00E582D6 /* PAGE2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGE2.swift; sourceTree = "<group>"; };
+		9627007129B083FB00E582D6 /* PAGE3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGE3.swift; sourceTree = "<group>"; };
+		9627007329B0887800E582D6 /* 22.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 22.gif; path = procedure/procedure/22.gif; sourceTree = SOURCE_ROOT; };
 		968B7CAB29990C040047A38E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		968B7CD329991CA90047A38E /* T-Shirt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "T-Shirt.swift"; sourceTree = "<group>"; };
 		96BABFF329A0E22E0064A072 /* descriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = descriptionPage.swift; sourceTree = "<group>"; };
@@ -192,7 +202,12 @@
 				960E55BE299289DE00558F89 /* Home.swift */,
 				968B7CAB29990C040047A38E /* Category.swift */,
 				96BAC09129A7E8540064A072 /* Category1.swift */,
+				9627007129B083FB00E582D6 /* PAGE3.swift */,
+				9627006F29B083BD00E582D6 /* PAGE2.swift */,
+				9627006D29B0839800E582D6 /* PAGE1.swift */,
+				9627006B29B0837100E582D6 /* GifImag.swift */,
 				B148079C29992BC0006D6895 /* Bodoni 72.ttc */,
+				9627007329B0887800E582D6 /* 22.gif */,
 				960E55B42991154D00558F89 /* Assets.xcassets */,
 				960E55B62991154D00558F89 /* Preview Content */,
 				96BABFF529A0E2610064A072 /* favorite.swift */,
@@ -296,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9627007429B0887800E582D6 /* 22.gif in Resources */,
 				960E55B82991154D00558F89 /* Preview Assets.xcassets in Resources */,
 				B148079D29992BC0006D6895 /* Bodoni 72.ttc in Resources */,
 				960E55B52991154D00558F89 /* Assets.xcassets in Resources */,
@@ -310,6 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9627006C29B0837100E582D6 /* GifImag.swift in Sources */,
+				9627007029B083BE00E582D6 /* PAGE2.swift in Sources */,
 				96BAC00E29A297B40064A072 /* Shorts.swift in Sources */,
 				96BAC00C29A297800064A072 /* Pants.swift in Sources */,
 				96BABFF829A0E2CF0064A072 /* addCommenet.swift in Sources */,
@@ -340,6 +358,8 @@
 				96BAC01829A298E10064A072 /* Loungwear.swift in Sources */,
 				96BAC08029A7ADC70064A072 /* Pants+Extension.swift in Sources */,
 				96BAC02129A3987E0064A072 /* AddCloset.swift in Sources */,
+				9627007229B083FB00E582D6 /* PAGE3.swift in Sources */,
+				9627006E29B0839800E582D6 /* PAGE1.swift in Sources */,
 				968B7CD429991CA90047A38E /* T-Shirt.swift in Sources */,
 				96BAC07C29A7AC610064A072 /* Skirts+Extension.swift in Sources */,
 				96BAC06629A6178C0064A072 /* MyImage.swift in Sources */,

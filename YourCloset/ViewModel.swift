@@ -21,7 +21,7 @@ class ViewModel: ObservableObject {
     @Published var myImages: [MyImage] = []
     @Published var showFileAlert = false
     @Published var appError: MyImageError.ErrorType?
-    
+    @Published var catg: String = ""
     init() {
         print(FileManager.docDirURL.path)
     }
@@ -77,9 +77,10 @@ class ViewModel: ObservableObject {
     
     func addMyImage(_ name: String, image: UIImage) {
         reset()
-        let myImage = MyImage(name: name)
+        let myImage = MyImage(name: name, category: catg)
         do {
-            try FileManager().saveImage("\(myImage.id)", image: image)
+            print(catg,"🍓")
+            try FileManager().saveImage("\(myImage.id)", image: image, category: catg )
             myImages.append(myImage)
             saveMyImagesJSONFile()
             reset()
@@ -113,6 +114,7 @@ class ViewModel: ObservableObject {
             let decoder = JSONDecoder()
             do {
                 myImages = try decoder.decode([MyImage].self, from: data)
+                print(myImages,"🏳️")
             } catch {
                 showFileAlert = true
                 appError = MyImageError.ErrorType(error: .decodingError)

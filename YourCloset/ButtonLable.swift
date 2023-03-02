@@ -15,7 +15,7 @@ struct ButtonLabel: View {
             Image(systemName: symbolName)
             Text(label)
         }
-        .font(.headline)
+        .font(.custom("SF Compact", size: 20))
         .padding()
         .frame(width: 150,height: 65)
         .background(Color("button1"))

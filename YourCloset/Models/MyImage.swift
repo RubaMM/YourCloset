@@ -13,6 +13,7 @@ import UIKit
 struct MyImage: Identifiable, Codable {
     var id = UUID()
     var name: String
+    var category: String = "T-shirt"
     
     var image: UIImage {
         do {

@@ -61,6 +61,10 @@ struct T_Shirt: View {
                         }
                     }
                 }}
+            .onAppear{
+                vm.catg = "T-shirt"
+                print( vm.catg ,"🍏")
+            }
         }
     }
 }

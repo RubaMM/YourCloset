@@ -18,41 +18,41 @@ struct Home: View {
                 VStack(spacing:25){
                     
                     Text("URCLOSET")
-                        .font(.custom("Bodoni 72", size: 36))
+                        .font(.custom("SF Compact", size: 36))
                         .foregroundColor(.black)
                     
                     
                     Divider()
                     
-                    
-                    ZStack{
-                        
-                        Rectangle()
-                            .fill(.white)
-                            .frame(width: 350, height: 160)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
-                            .padding(.bottom,30)
-                            .padding()
-                        // .position(x: 196 , y:0)HStack(spacing:150){
-                        
-                        HStack(spacing:130){
+                    NavigationLink(destination: PAGE1_()) {
+                        ZStack{
                             
-                            Text("Procedure")
-                                .font(.custom("Bodoni 72", size: 25))
-                                .fontWeight(.semibold)
-                            //  .padding()
-                            //   .padding(.top,-15)
-                                .foregroundColor(.black)
+                            Rectangle()
+                                .fill(.white)
+                                .frame(width: 350, height: 160)
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                                .padding(.bottom,30)
+                                .padding()
+                            // .position(x: 196 , y:0)HStack(spacing:150){
                             
-                            Image("procedure")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 20, height:60 )
-                                .padding(.trailing)
-                        }.padding(.bottom,50)
-                        
-                    }
+                            HStack(spacing:130){
+                                
+                                Text("Procedure")
+                                    .font(.custom("SF Compact", size: 25))
+                                    .fontWeight(.semibold)
+                                //  .padding()
+                                //   .padding(.top,-15)
+                                    .foregroundColor(.black)
+                                
+                                Image("procedure")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 20, height:60 )
+                                    .padding(.trailing,30)
+                            }.padding(.bottom,50)
+                            
+                        } }
                     
                     
                     NavigationLink(destination: Category1()) {
@@ -69,11 +69,11 @@ struct Home: View {
                                 
                                 
                                 Text("Closet")
-                                    .font(.custom("Bodoni 72", size: 25))
+                                    .font(.custom("SF Compact", size: 25))
                                     .fontWeight(.semibold)
-                                //  .padding()
                                 //   .padding(.top,-15)
                                     .foregroundColor(.black)
+                                    .padding(.bottom)
                                 
                                 Image("closet")
                                     .resizable()

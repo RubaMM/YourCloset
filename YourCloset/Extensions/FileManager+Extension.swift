@@ -9,7 +9,6 @@ import UIKit
 
 let fileName = "MyImages.json"
 
-
 extension FileManager {
     static var docDirURL: URL {
         return Self.default.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -37,7 +36,7 @@ extension FileManager {
         }
     }
     
-    func saveImage(_ id: String, image: UIImage) throws {
+    func saveImage(_ id: String, image: UIImage, category: String) throws {
         if let data = image.jpegData(compressionQuality: 0.6) {
             let imageURL = FileManager.docDirURL.appendingPathComponent("\(id).jpg")
             do {
@@ -63,5 +62,4 @@ extension FileManager {
             throw MyImageError.readImageError
         }
     }
-    
 }

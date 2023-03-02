@@ -35,7 +35,7 @@ struct ContentView: View {
                 .scaleEffect(size)
                 .opacity(opacity)
                 .onAppear {
-                    withAnimation(.easeIn(duration: 2.2)) {
+                    withAnimation(.easeIn(duration: 2.0)) {
                         self.size = 0.9
                         self.opacity = 1.00
                     }
