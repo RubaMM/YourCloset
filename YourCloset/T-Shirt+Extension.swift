@@ -55,7 +55,9 @@ extension T_Shirt {
                 vm.isEditing = isEditing
             }
             .focused($nameField, equals: true)
+            .background(.white)
             .textFieldStyle(.roundedBorder)
+   
             HStack {
                 Button {
                     if vm.selectedImage == nil {

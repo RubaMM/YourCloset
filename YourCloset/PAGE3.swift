@@ -14,27 +14,28 @@ struct PAGE3: View {
 
     var body: some View {
             
-
-        VStack{
+        ZStack{
+            Color("MainColor").ignoresSafeArea()
+            VStack{
                 Text ("well done" )
-                .font(.custom("SF Compact", size: 50))
-                .foregroundColor(.black)
+                    .font(.custom("SF Compact", size: 50))
+                    .foregroundColor(.black)
                     .padding(.top,10)
                 Image(systemName: "checkmark.circle")
                     .font(.system(size:180))
                     .foregroundColor(Color("B"))
                     .padding(15)
-                  Text ("Now that your clothes are arranged, go" )
-                .font(.custom("SF Compact", size: 18
-                             ))
-               Text ("put them in the appropriate categories." )
-                .font(.custom("SF Compact", size: 18))
-                 .padding(.bottom,8)
-            ZStack{
-                
-                
+                Text ("Now that your clothes are arranged, go" )
+                    .font(.custom("SF Compact", size: 18
+                                 ))
+                Text ("put them in the appropriate categories." )
+                    .font(.custom("SF Compact", size: 18))
+                    .padding(.bottom,8)
+                ZStack{
+                    
+                    
                     Button {
-       
+                        
                         goBackToMain.toggle()
                     } label: {
                         
@@ -61,11 +62,11 @@ struct PAGE3: View {
                     .fullScreenCover(isPresented: $goBackToMain) {
                         Home()
                     }
-                
                     
+                    
+                }
             }
         }
-        
         
             }
         }

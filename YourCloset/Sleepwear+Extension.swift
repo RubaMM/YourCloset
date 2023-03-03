@@ -53,6 +53,7 @@ extension Sleepwear{
                 vm.isEditing = isEditing
             }
             .focused($nameField, equals: true)
+            .background(.white)
             .textFieldStyle(.roundedBorder)
             HStack {
                 Button {
